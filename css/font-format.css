@@ -8,6 +8,8 @@ padding: 0;
 
 }
 
+h1 {padding-top: 0;}
+
 font.author {
   font-size: 17px;
   font-weight: lighter;
