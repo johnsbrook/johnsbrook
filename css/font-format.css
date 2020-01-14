@@ -23,3 +23,8 @@ p.top {
 p.bottom {
   padding-bottom: 120px;
 }
+
+div.titlebar {
+  color: white;
+  background-color: black;
+}
