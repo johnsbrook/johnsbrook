@@ -1,47 +1,16 @@
-body {
+font.titlebar-font {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  font-weight: lighter;
 
-margin-top: 0px; 
-margin-bottom: 0px;
-margin-left: 0px; 
-margin-right: 0px;
-padding: 0;
-
+  color: white;
 }
 
-h1 {padding-top: 0;}
+font.titlebar-fonteng {
+  font-size: 40px;
+}
 
 font.author {
   font-size: 17px;
   font-weight: lighter;
-}
-
-
-h2.article {
-  padding-top: 40px;
-}
-
-h3 {
-  padding-top: 20px;
-}
-
-p {
-  line-height: 1.6;
-}
-
-p.top {
-  padding-top: 50px;
-}
-
-p.bottom {
-  padding-bottom: 120px;
-}
-
-div.titlebar {
-  color: white;
-  background-color: black;
-
-  width: 100%;
-  padding-top: 0;
-  margin: auto;
-  position: relative;
 }

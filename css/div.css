@@ -1,0 +1,28 @@
+div.framework {
+  margin: 0;
+  padding: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1250px;
+
+  background-color: blue;
+
+  display: grid;
+    grid-template-areas:
+      'header'
+      'content';
+}
+
+div.header {
+  grid-area: header;
+  background-color: rgb(15,155,225);
+
+  text-align: center;
+}
+
+div.content {
+  grid-area: content;
+  background-color: white;
+}
