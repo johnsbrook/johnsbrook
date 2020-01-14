@@ -1,0 +1,25 @@
+font.author {
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+
+h2.article {
+  padding-top: 40px;
+}
+
+h3 {
+  padding-top: 20px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+p.top {
+  padding-top: 50px;
+}
+
+p.bottom {
+  padding-bottom: 120px;
+}
