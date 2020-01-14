@@ -43,4 +43,5 @@ div.titlebar {
   width: 100%;
   padding-top: 0;
   margin: auto;
+  position: relative;
 }
