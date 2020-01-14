@@ -1,0 +1,10 @@
+@media only screen and (max-width: 600px) {
+
+  font.titlebar-font {
+    font-size: 40px;
+  }
+
+  font.titlebar-fonteng {
+    font-size: 20px;
+  }
+}
