@@ -12,6 +12,7 @@ div.framework {
   display: grid;
     grid-template-areas:
       'header'
+      'faceimg'
       'content';
 }
 
@@ -22,7 +23,28 @@ div.header {
   text-align: center;
 }
 
+div.faceimg {
+  grid-area: faceimg;
+
+  position: relative;
+  text-align: center;
+}
+
+div.faceimg-text {
+  position: absolute;
+  top: 35%;
+  left: 16px;
+}
+
 div.content {
   grid-area: content;
   background-color: white;
+
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+div.p-text {
+  padding-left: 25px;
+  padding-right: 25px;
 }

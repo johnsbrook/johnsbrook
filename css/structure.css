@@ -9,11 +9,3 @@ h3 {
 p {
   line-height: 1.6;
 }
-
-p.top {
-  padding-top: 50px;
-}
-
-p.bottom {
-  padding-bottom: 120px;
-}

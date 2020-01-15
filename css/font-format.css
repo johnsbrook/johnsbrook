@@ -10,7 +10,41 @@ font.titlebar-fonteng {
   font-size: 40px;
 }
 
+font.content-font {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
 font.author {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: lighter;
+}
+
+font.faceimg-font {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  font-size: 7.5vw;
+
+  text-shadow: 2px 2px gray;
+}
+
+font.faceimg-fontoverline {
+  text-decoration: overline;
+  text-decoration-style: dotted;
+  text-decoration-color: white;
+}
+
+@media only screen and (min-width: 1250px) {
+  font.faceimg-font {
+    font-size: 95px;
+  }
+}
+
+font.heading {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+}
+
+font.heading-1 {
+  font-size: 28px;
 }
