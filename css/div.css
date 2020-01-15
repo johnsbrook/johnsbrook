@@ -36,6 +36,12 @@ div.faceimg-text {
   left: 16px;
 }
 
+div.faceimg-insta {
+  position: absolute;
+  bottom: 1%;
+  right: -4%;
+}
+
 div.content {
   grid-area: content;
   background-color: white;
