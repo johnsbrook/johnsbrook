@@ -42,6 +42,16 @@ div.faceimg-insta {
   right: -4%;
 }
 
+div.knowme {
+  position: absolute;
+  top: 1%;
+  left: 0;
+
+  text-align: center;
+  width: 100%;
+
+}
+
 div.content {
   grid-area: content;
   background-color: white;
@@ -53,4 +63,10 @@ div.content {
 div.p-text {
   padding-left: 2.5%;
   padding-right: 2%;
+}
+
+div.p-text-bottom {
+  padding-left: 2.5%;
+  padding-right: 2%;
+  padding-bottom: 100px;
 }

@@ -1,9 +1,15 @@
-@media only screen and (max-width: 600px) {}
-div.content {
-  grid-area: content;
-  background-color: white;
+@media only screen and (max-width: 600px) {
 
-  padding-left: 5%px;
-  padding-right: 5%px;
-}
+  div.faceimg-insta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+
+    background-color: rgba(0,0,0,0.5);
+  }
+
 }

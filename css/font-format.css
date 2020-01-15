@@ -38,6 +38,17 @@ font.faceimg-insta {
   font-size: 30px;
 }
 
+font.faceimg-font-m {
+  font-family: 'Amatic SC', cursive;
+  color: white;
+  font-size: 7.5vw;
+
+  text-shadow: 2px 2px gray;
+}
+
+font.faceimg-insta-m {
+  font-size: 30px;
+}
 
 font.heading {
   font-family: 'Titillium Web', sans-serif;
