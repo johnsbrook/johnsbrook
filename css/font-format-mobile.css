@@ -7,4 +7,8 @@
   font.titlebar-fonteng {
     font-size: 30px;
   }
+
+  font.content-text {
+    font-size: 14px;
+  }
 }
