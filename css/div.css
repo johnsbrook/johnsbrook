@@ -40,11 +40,11 @@ div.content {
   grid-area: content;
   background-color: white;
 
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 div.p-text {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 2.5%;
+  padding-right: 2%;
 }

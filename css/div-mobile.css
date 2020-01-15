@@ -1,0 +1,9 @@
+@media only screen and (max-width: 600px) {}
+div.content {
+  grid-area: content;
+  background-color: white;
+
+  padding-left: 5%px;
+  padding-right: 5%px;
+}
+}
