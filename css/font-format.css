@@ -15,6 +15,14 @@ font.content-font {
   font-size: 20px;
 }
 
+font.clickon {
+  color:darkgray;
+  font-size: 18px;
+
+  font-weight: bolder;
+  font-style: italic;
+}
+
 font.author {
   font-size: 14px;
   font-weight: lighter;

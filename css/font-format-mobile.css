@@ -11,4 +11,13 @@
   font.content-font {
     font-size: 17px;
   }
+
+  font.clickon {
+    color:darkgray;
+    font-size: 15px;
+
+    font-weight: bolder;
+    font-style: italic;
+  }
+
 }
