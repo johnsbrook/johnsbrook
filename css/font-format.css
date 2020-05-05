@@ -15,10 +15,6 @@ font.content-font {
   font-size: 20px;
 }
 
-font.imgcaption {
-  font-size: 15px;
-}
-
 font.clickon {
   color:darkgray;
   font-size: 18px;
@@ -40,31 +36,7 @@ font.faceimg-font {
   text-shadow: 2px 2px gray;
 }
 
-font.faceimg-font-lis {
-  font-family: 'Amatic SC', cursive;
-  color: white;
-  font-size: 6vw;
-
-  text-shadow: 2px 2px gray;
-}
-
-@media only screen and (min-width: 1250px) {
-  font.faceimg-font-lis {
-    font-family: 'Amatic SC', cursive;
-    color: white;
-    font-size: 75px;
-
-    text-shadow: 2px 2px gray;
-  }
-}
-
 font.faceimg-fontoverline {
-  text-decoration: overline;
-  text-decoration-style: dotted;
-  text-decoration-color: white;
-}
-
-font.faceimg-fontoverline-lis {
   text-decoration: overline;
   text-decoration-style: dotted;
   text-decoration-color: white;
