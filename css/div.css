@@ -36,10 +36,25 @@ div.faceimg-text {
   left: 16px;
 }
 
+div.faceimg-text-lis {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
 div.faceimg-insta {
   position: absolute;
   bottom: 1%;
   right: -4%;
+}
+
+div.faceimg-insta-lis {
+  position: absolute;
+
+  width: 100%;
+  bottom: 0%;
+  background-color: rgba(0,0,0,0.5);
 }
 
 div.knowme {

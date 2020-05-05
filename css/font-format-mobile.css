@@ -12,6 +12,10 @@
     font-size: 17px;
   }
 
+  font.imgcaption {
+    font-size: 14px;
+  }
+
   font.clickon {
     color:darkgray;
     font-size: 15px;
@@ -19,5 +23,14 @@
     font-weight: bolder;
     font-style: italic;
   }
+
+  font.faceimg-font-lis {
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 7.5vw;
+
+    text-shadow: 2px 2px gray;
+  }
+
 
 }
