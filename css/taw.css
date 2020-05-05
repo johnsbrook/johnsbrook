@@ -19,7 +19,6 @@
 }
 
 a {
-  color: rgba(15,155,255,1);
   text-decoration: none;
 }
 
@@ -207,7 +206,7 @@ a.a_insta{
 }
 
 .read_more {
-  color: rgba(135,205,255,1);
+  color: rgba(15,155,255,1);
 }
 
 img.article_img {
