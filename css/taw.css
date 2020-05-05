@@ -172,16 +172,16 @@ a.a_insta{
 
 .article_feature {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
-  margin: 25px 25px auto 25px;
+  margin: 20px 20px auto 20px;
 
   font-family: 'Catamaran', sans-serif;
   font-size: 16px;
 
   line-height: 1.25;
 
-  box-shadow: 1px 1px 6px 6px #ccc;
+  box-shadow: 1px 1px 5px 5px #ccc;
 }
 
 .article_feature_text {
@@ -211,20 +211,16 @@ a.a_insta{
   margin-bottom: 10px;
 }
 
-.article_img {
+img.article_img {
   display: flex;
   align-items: center;
 
-
-  border: 1px;
-  border-style: solid;
-  border-color: green;
-  border-radius: 25px;
-
-  box-shadow: 1 1 3px 3px #ccc;
-
   image-resolution: from-image;
-  width: 250px;
+  width: 90%;
   height: auto;
-  margin-right: 10px;
+  margin: auto;
+  margin-bottom: 13px;
+
+  border-radius: 25px;
+  box-shadow: 1px 1px 2px 2px #ccc;
 }
