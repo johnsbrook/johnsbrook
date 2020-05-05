@@ -116,7 +116,6 @@ a {
   font-weight: bold;
   font-size: 16px;
   filter: invert(.25);
-
 }
 
 .business_card_content_author {
@@ -134,12 +133,12 @@ a {
   justify-content: center;
 
   margin-top: 0;
-  margin-right: 10px;
+  margin-right: 8px;
 
   text-align: center;
 
   font-family: 'Catamaran', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 
   line-height: 1.25;
 }
