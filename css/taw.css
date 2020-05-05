@@ -185,19 +185,10 @@ a.a_insta{
 }
 
 .article_feature_text {
-  border: 1px;
-  border-style: solid;
-  border-color: blue;
-
   margin: auto 10px auto 10px;
 }
 .article_feature_title {
   font-weight: bold;
-
-  border: 1px;
-  border-style: dotted;
-  border-color: red;
-
   margin-top: 10px;
 }
 
