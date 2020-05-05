@@ -18,6 +18,10 @@
   align-items: center;
 }
 
+a {
+  color: rgba(15,155,255,1);
+  text-decoration: none;
+}
 
 
 .title {
@@ -200,6 +204,10 @@ a.a_insta{
 .article_feature_p {
   line-height: 1.5;
   margin-bottom: 10px;
+}
+
+.read_more {
+  color: rgba(135,205,255,1);
 }
 
 img.article_img {
