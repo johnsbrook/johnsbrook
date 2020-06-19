@@ -38,12 +38,13 @@
     box-shadow: 0px 6px 5px 0px rgba(184,184,184,0.47);
     }
 
-.navBarFixed {
+.navBarSticky {
     position: fixed;
     top: 0px;
     width: 100%;
-} </style>
+} 
 
+</style>
 
 <!--    JavaScript External Source Files    -->
 
@@ -118,17 +119,18 @@
 
         <script>
 
-            var body = document.getElementsByTagName("body")[0];
-            var navigation = document.getElementById("navTag");
+            windows.onScroll = function() {navBarFunction()};
 
-            window.addEventListener("scroll", function(evt) {
-            if (body.scrollTop > navTag.getBoundingClientRect().bottom) {
-                // when the scroll's y is bigger than the nav's y set class to fixednav
-                navTag.className = "navBarFixed"
-            } else { // Overwise set the class to staticnav
-                navTag.className = "navbar"
-            }
-            });      
+            var navBar = document.getElementById("nav-tag");             
+            var stickyBar = navBar.offsetTop;
+
+            function navBarFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navBar.classList.add("nav")
+                } else  {
+                        navBar.classList.remove("navBarSticky");
+                        }
+            } 
 
         </script>
 
