@@ -68,7 +68,7 @@
             
 
             <!--    Nav Menu       
-                    NOTE: Dropdown menu when in mobile view. Navigation Bar when in desktop.    -->
+                    NOTE: Dropdown menu when in mobile view. Top Navigation Bar when in desktop.    -->
             <div id="nav-menu">
 
                 <div class="nav-menu-container font-nav">
@@ -145,7 +145,7 @@
         <div class="tweeter-card-details">
 
             <div class="tweeter-card-details-div"><b>Traveling Around The World</div></b>
-            <div class="tweeter-card-details-author">by: John S. Brook</div>
+            <div class="tweeter-card-details-author font-author">by: John S. Brook</div>
 
             <div class="tweeter-card-details-div">International Traveler</div>
             <div class="tweeter-card-details-div">Web Developer</div>
@@ -176,22 +176,66 @@
 
 </div>
 
+
+
 <!--    Travel Cards            -->
 
 
+<!-- JavaScript Code for Diplaying Boxes    
+
+<div id="card" style="display:none; margin: auto; margin-top: 20px; width: 50%; background-color: aqua;">
+
+    This is a card.
+
+</div>
+<div>
+    <input type="button"  name="answer" value="Show Card" onClick="showDiv()" />
+</div>
+
+<script>
+
+    function showDiv() {
+
+        document.getElementById('card').style.display = "block";
+
+    }
+
+</script>
+
+-->
+
 <!--    Card #1                 -->
     <!--    Card Title                  -->
-    Tel-Aviv: The Old New Land 
-    by John S. Brook
 
+<div class="card-box">
 
-    <!--    Card Introduction           -->
-    <!--    IMPORTANT: 300 chars. appx. -->
-    I just returned from Tel-Aviv, Israel's leisure travel, world-class dining and entertainment capital. This Mediterranean Sea paradise sits along the coast with a long strip of beaches, the old port city of Jaffa and extensive avenues lined up with boutiques and traditional shops...read more.
+    <div class="card-box-container">
+        <div class="card-box-title">
+            Tel-Aviv: The Old New Land
+        </div>
+        <div><font class="font-author" style="font-weight: lighter; margin-top: 0;">
+            by John S. Brook
+        </font>
+        </div>
 
-    <!--    Card Thumb Image            -->
-    <!--    Insert Thumb Image Here     -->
+        <!--    Card Introduction           -->
+        <!--    IMPORTANT: 300 chars. appx. -->
+        <div class="card-box-intro font-box">
+        I just returned from Tel-Aviv, Israel's leisure travel, world-class dining and entertainment capital. This Mediterranean Sea paradise sits along the coast with a long strip of beaches, the old port city of Jaffa and extensive avenues lined up with boutiques and traditional shops...read more.
+        </div>
 
+        <!--    Card Thumb Image            -->
+        <!--    Insert Thumb Image Here     -->
+        <div class="card-box-thumb">
+            
+            <img src="img/telaviv.jpg" class="card-box-thumb-img">
+        
+        </div>
+        <div class="card-box-pop">
+            <img src="img/telaviv.jpg">
+        </div>
+    </div>
+</div>
 
 <!--    Card #2                 -->
     <!--    Card Title                  -->

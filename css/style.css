@@ -44,7 +44,15 @@
     font-size: 1.5em;
 }
 
+.font-author {
+    font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+    font-size: .85em;
+}
 
+.font-box {
+    font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
 
 
 /*      Header Styling      */
@@ -90,13 +98,8 @@ h2 {
     box-shadow: 0px 6px 5px 0px rgba(184,184,184,0.47);
     }
 
-.navBarFixed {
-    position: fixed;
-    top: 0px;
-}
-
 #nav-menu {
-    display: none;   
+    display: none; 
 }
 
 .nav-menu-container {
@@ -222,7 +225,6 @@ h2 {
 }
 
 .tweeter-card-details-author {
-    font-size: .75em;
     margin: 0px 0 10px 5px;
 }
 
@@ -275,5 +277,51 @@ h2 {
     padding: 20px;
     font-family: 'Catamaran', Arial, Helvetica, sans-serif;
 
-    line-height: 1.25;
+    line-height: 1.5;
+}
+
+
+
+/*      Destination Cards       */
+
+.card-box-container {
+    margin: 10px;
+}
+
+.card-box {
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    border: 1px;
+    border-color: rgb(65, 65, 65);
+    border-style: solid;
+    border-radius: 12.5px;
+
+    box-shadow: 0px 0px 7px 6px rgba(230,230,230,1);
+}
+
+.card-box-title {
+    font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card-box-thumb {
+    width: 100%;
+}
+
+img.card-box-thumb-img {
+    width: 100%;
+    border-radius: 5px;
+
+    margin-top: 10px;
+}
+
+.card-box-pop {
+    display: none;
 }
