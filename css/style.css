@@ -26,6 +26,9 @@
     margin: auto;
 }
 
+
+
+
 /*      Fonts               */
 
 .font-header {
@@ -35,8 +38,10 @@
 }
 
 .font-nav {
-    font-size: 18px;
+    font-size: 1.5em;
 }
+
+
 
 
 /*      Header Styling      */
@@ -93,7 +98,6 @@ h2 {
 
 .nav-menu-div {
     padding: 5px 15px;
-    font-size: 1.2em;
 }
 
 .nav-menu-div a {
@@ -103,7 +107,6 @@ h2 {
 
 .nav-menu-div-1 {
     padding: 5px 15px;
-    font-size: 1.2em;
 }
 
 .nav-menu-div:hover {
@@ -148,7 +151,6 @@ h2 {
     border-style: solid;
     border-color: rgba(15,155,225,1);
     border-radius: 10px;
-
 }
 
 
