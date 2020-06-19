@@ -1,0 +1,230 @@
+/*      General Styling     */
+
+.no-margin {
+    margin: 0;
+}
+
+.auto-margin {
+    margin: auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+.no-decoration {
+    list-style: none;
+    text-decoration: none;
+}
+
+.no-border {
+    border: none;
+}
+
+.container {
+    max-width: 1080px;
+    margin: auto;
+}
+
+/*      Fonts               */
+
+.font-header {
+    color: white;
+    font-family: 'Parisienne', Arial, Helvetica, sans-serif;    
+    letter-spacing: 2px;
+}
+
+.font-nav {
+    font-size: 18px;
+}
+
+
+/*      Header Styling      */
+
+.background-color-header {
+    background-color: rgba(15,155,225,1);
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: lighter;
+    margin: 0px 5px 5px 5px;
+    padding-top: 10px;
+}
+ 
+h2 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin: 5px 5px;
+    padding: 5px auto;
+    line-height: 1.5;
+}
+
+
+
+
+/*      Navigation Bar      */
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+
+    width: 1080px;
+    margin: auto;
+    padding: auto 10px;
+
+    background-color: rgb(77, 181, 236);
+
+    box-shadow: 0px 6px 5px 0px rgba(184,184,184,0.47);
+    
+}
+
+#nav-menu {
+    display: none;   
+}
+
+.nav-menu-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: auto;
+}
+
+.nav-menu-div {
+    padding: 5px 15px;
+    font-size: 1.2em;
+}
+
+.nav-menu-div a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu-div-1 {
+    padding: 5px 15px;
+    font-size: 1.2em;
+}
+
+.nav-menu-div:hover {
+    background-color: rgba(135, 206, 250, 1);
+    cursor: pointer;  
+}
+
+@media only screen and (min-width: 700px) {
+    .nav-menu-div-1 {
+        display: none;
+    }
+
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+    .nav-menu-container {
+        flex-direction: row;
+        background-color: rgba(135, 206, 250, .0);
+    }
+
+}
+
+
+
+/*      Tweeter Styled Card     */
+
+.tweeter-card {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+    margin-top: 10px;
+
+    padding-top: 10px;
+
+    width: 95%;
+    max-width: 500px;
+
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(15,155,225,1);
+    border-radius: 10px;
+
+}
+
+
+.tweeter-card-top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.face-thumbnail {
+    width: 20%;
+
+    border: 0px;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-style: dotted;
+    border-color: rgba(15,155,225,1);
+}
+
+.tweeter-card-img {
+    width: 100%;
+    max-width: 125px;
+    height: auto;
+    border-radius: 10px;
+
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.tweeter-card-details {
+    width: 60%;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+    
+    border: 0px;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-style: dotted;
+    border-color: rgba(15,155,225,1);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .80em;
+}
+
+.tweeter-card-instagram{
+    display: flex;
+    flex-direction: column;
+
+    width: 20%;
+
+    border: 0px;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-style: dotted;
+    border-color: rgba(15,155,225,1);
+}
+
+.tweeter-card-instagram-icon{
+    font-size: 2em;
+    text-align: center;
+
+    padding-right: 5px;
+}
+
+.tweeter-card-instagram-follow {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .75em;
+    text-align: center;
+
+    padding-right: 5px;
+}
+
+.tweeter-card-bottom {
+    display: flex;
+    flex-direction: row;
+}
