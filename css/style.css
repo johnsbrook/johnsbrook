@@ -165,7 +165,10 @@ h2 {
     align-items: center;
 
     width: 20%;
-    padding: 10px;
+    padding-top: 10px; 
+    padding-right: 0px;
+    padding-bottom: 10px; 
+    padding-left: 10px;
 
     border: 0px;
     border-top: 1px;
@@ -193,6 +196,7 @@ h2 {
 
     
     padding: 10px;
+    padding-left: 0px;
     
     
     border: 0px;
