@@ -188,11 +188,10 @@ h2 {
     align-items: left;
     justify-content: center;
     
-    width: 50%;
+    width: 58%;
 
     
-    padding: 10px;
-    padding-left: 0px;
+    
     
     
     border: 0px;
@@ -209,14 +208,14 @@ h2 {
 }
 
 .tweeter-card-details-div {
-    margin-left: 10px;
+    margin-left: 5px;
     margin-top: 2.5px;
     line-height: 1;
 }
 
 .tweeter-card-details-author {
     font-size: .75em;
-    margin: 0px 0 10px 10px;
+    margin: 0px 0 10px 5px;
 }
 
 
@@ -226,7 +225,7 @@ h2 {
     align-items: center;
     justify-content: center;
 
-    width: 20%;
+    width: 12%;
     padding: 10px;
 
     border: 0px;
