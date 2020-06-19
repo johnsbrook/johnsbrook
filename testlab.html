@@ -25,7 +25,7 @@
 
 .navBarSticky {
     position: fixed;
-    top: 0px;
+    top: 0;
     width: 100%;
 } 
 
@@ -57,9 +57,9 @@
 
     <!--        Navigation      -->     
 
-    <nav id="navTag"> 
+    <nav> 
 
-        <div class="navbar">
+        <div class="nav-bar" id="navbar">
 
             <!--    Nav Bars        -->
             <div class="nav-menu-div-1 font-nav">
@@ -83,6 +83,7 @@
             </div>
                 
         </div>
+    </nav>
 
         <!--    Navigation Button Script
                 Navigation will display when nav bars have been clicked or tapped on.   -->
@@ -104,22 +105,22 @@
 
         <script>
 
-            windows.onScroll = function() {navBarFunction()};
+            window.onscroll = function() {myFunction()};
 
-            var navBar = document.getElementById("navTag");             
-            var stickyBar = navBar.offsetTop;
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
 
-            function navBarFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navBar.classList.add("nav")
-                } else  {
-                        navBar.classList.remove("navBarSticky");
-                        }
-            } 
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("navBarSticky")
+            } else {
+                navbar.classList.remove("navBarSticky");
+            }
+            }
 
         </script>
 
-    </nav>
+    
 
 </header>
 
