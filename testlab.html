@@ -22,21 +22,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Permanent+Marker&family=Great+Vibes&family=Parisienne&family=Open+Sans&family=Raleway&family=Catamaran&display=swap" rel="stylesheet">
 
 <style>
-.navbar {
-    display: flex;
-    flex-direction: column;
-
-
-    width: 100%;
-    max-width: 1080px;
-
-    margin: auto;
-    padding: auto 10px;
-
-    background-color: rgb(77, 181, 236);
-
-    box-shadow: 0px 6px 5px 0px rgba(184,184,184,0.47);
-    }
 
 .navBarSticky {
     position: fixed;
@@ -121,7 +106,7 @@
 
             windows.onScroll = function() {navBarFunction()};
 
-            var navBar = document.getElementById("nav-tag");             
+            var navBar = document.getElementById("navTag");             
             var stickyBar = navBar.offsetTop;
 
             function navBarFunction() {
