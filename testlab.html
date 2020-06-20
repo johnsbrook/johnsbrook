@@ -181,31 +181,8 @@
 <!--    Travel Cards            -->
 
 
-<!-- JavaScript Code for Diplaying Boxes    
-
-<div id="card" style="display:none; margin: auto; margin-top: 20px; width: 50%; background-color: aqua;">
-
-    This is a card.
-
-</div>
-<div>
-    <input type="button"  name="answer" value="Show Card" onClick="showDiv()" />
-</div>
-
-<script>
-
-    function showDiv() {
-
-        document.getElementById('card').style.display = "block";
-
-    }
-
-</script>
-
--->
-
 <!--    Card #1                 -->
-    <!--    Card Title                  -->
+    <!--        Tel-Aviv: The Old New Land  -->
 
 <div class="card-box">
 
@@ -226,31 +203,214 @@
 
         <!--    Card Thumb Image            -->
         <!--    Insert Thumb Image Here     -->
-        <div class="card-box-thumb">
-            
-            <img src="img/telaviv.jpg" class="card-box-thumb-img">
-        
-        </div>
+ 
         <div class="card-box-pop">
-            <img src="img/telaviv.jpg">
+
+
+            <div style="display: flex; flex-direction: row;">
+
+
+                <div><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>     
+
+            <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img/TLV1.jpg" class="mySlides-pic">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img/TLV2.jpg" class="mySlides-pic">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img/TLV3.jpg" class="mySlides-pic">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img/TLV4.jpg" class="mySlides-pic">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img/TLV5.jpg" class="mySlides-pic">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img/TLV6.jpg" class="mySlides-pic">
+                </div>
+            
+                <div><a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+             </div>
+        <!-- Next and previous buttons -->
+
+        <!-- Image text -->
+        <div class="caption-container">
+            <p id="caption"></p>
         </div>
-    </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+            <div class="column">
+            <img class="demo cursor" src="img/TLV1.jpg" style="width:100%; border-bottom-left-radius: 25px; onclick="currentSlide(1)" alt="Tel-Aviv's city center">
+            </div>
+            <div class="column">
+            <img class="demo cursor" src="img/TLV2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Charles Clore Beach, north of Port of Jaffa">
+            </div>
+            <div class="column">
+            <img class="demo cursor" src="img/TLV3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Al Bahr Mosque">
+            </div>
+            <div class="column">
+            <img class="demo cursor" src="img/TLV4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Yossi Carmel Square with The Clock Tower">
+            </div>
+            <div class="column">
+            <img class="demo cursor" src="img/TLV5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Gordon Beach during sunset">
+            </div>
+            <div class="column">
+            <img class="demo cursor" src="img/TLV6.jpg" style="width:100%; border-bottom-right-radius: 25px;" onclick="currentSlide(6)" alt="Frishman Beach after sunset">
+            </div>
+        </div>
+
+                </div>
+            </div>
 </div>
+
+<script>
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    
+    </script>
+
+
+
 
 <!--    Card #2                 -->
     <!--    Card Title                  -->
-    Lisbon, Portugal: The City of Seven Hills 
-    by John S. Brook
+<div class="card-box">
 
+        <div class="card-box-container">
+            <div class="card-box-title">
+                Lisbon, Portugal: The City of Seven Hills 
+            </div>
+            <div><font class="font-author" style="font-weight: lighter; margin-top: 0;">
+                by John S. Brook
+            </font>
+            </div>
+    
 
     <!--    Card Introduction           -->
     <!--    IMPORTANT: 300 chars. appx. -->
+    <div class="card-box-intro font-box">
     The city of Lisbon is one of many charms. The horizon is full of city views that don't cease to surprise you.
     Every neighborhood in a Cidade das Sēte Colinas is unique from each other. On today's day trip I'm going to explore from the modern Parque das...read more.
+    </div>
 
     <!--    Card Thumb Image            -->
     <!--    Insert Thumb Image Here     -->
+    <div class="card-box-pop">
 
+
+        <div style="display: flex; flex-direction: row;">
+
+
+            <div><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>     
+
+        <!-- Full-width images with number text -->
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="img/TLV1.jpg" class="mySlides-pic">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="img/TLV2.jpg" class="mySlides-pic">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="img/TLV3.jpg" class="mySlides-pic">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="img/TLV4.jpg" class="mySlides-pic">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="img/TLV5.jpg" class="mySlides-pic">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="img/TLV6.jpg" class="mySlides-pic">
+            </div>
+        
+            <div><a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+         </div>
+    <!-- Next and previous buttons -->
+
+    <!-- Image text -->
+    <div class="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail images -->
+    <div class="row">
+        <div class="column">
+        <img class="demo cursor" src="img/TLV1.jpg" style="width:100%; border-bottom-left-radius: 25px; onclick="currentSlide(1)" alt="Tel-Aviv's city center">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="img/TLV2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Charles Clore Beach, north of Port of Jaffa">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="img/TLV3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Al Bahr Mosque">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="img/TLV4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Yossi Carmel Square with The Clock Tower">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="img/TLV5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Gordon Beach during sunset">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="img/TLV6.jpg" style="width:100%; border-bottom-right-radius: 25px;" onclick="currentSlide(6)" alt="Frishman Beach after sunset">
+        </div>
+    </div>
+
+
+</div></div></div>
 
 <!--    Card #3                 -->
     <!--    Card Title                  -->
