@@ -285,6 +285,7 @@ h2 {
 
 .card-box-container {
     margin: 10px;
+
 }
 
 .card-box {
@@ -310,7 +311,9 @@ h2 {
     font-family: 'Catamaran', Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     font-weight: bold;
+    
 }
+
 
 .card-box-thumb {
     width: 100%;
@@ -329,13 +332,13 @@ img.card-box-thumb-img {
 /*        Pop Up Gallery          */
 
 .card-box-pop {
+    position: relative;
+
+    
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
-    border: 2px red solid;
-
-}
+    }
 
 
 

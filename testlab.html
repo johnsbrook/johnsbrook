@@ -201,13 +201,7 @@
         I just returned from Tel-Aviv, Israel's leisure travel, world-class dining and entertainment capital. This Mediterranean Sea paradise sits along the coast with a long strip of beaches, the old port city of Jaffa and extensive avenues lined up with boutiques and traditional shops...read more.
         </div>
 
-        <div style="position: relative; display: flex; flex-direction: row; top: 275px;">
-            <div style="width: 50%;"><a class="prev" onclick="plusSlides(-1)">&#10094;</a>  
-            </div>
-            <div style="width: 50%; text-align: right;">
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-        </div>
+
 
         <!--    Card Thumb Image            -->
         <!--    Insert Thumb Image Here     -->
@@ -246,7 +240,6 @@
                     <img src="img/TLV6.jpg" class="mySlides-pic">
                 </div>
             
-
         
         <!-- Next and previous buttons -->
 
@@ -258,7 +251,7 @@
         <!-- Thumbnail images -->
         <div class="row">
             <div class="column">
-            <img class="demo cursor" src="img/TLV1.jpg" style="width:100%; border-bottom-left-radius: 25px; onclick="currentSlide(1)" alt="Tel-Aviv's city center">
+            <img class="demo cursor" src="img/TLV1.jpg" style="width:100%; border-bottom-left-radius: 25px;" onclick="currentSlide(1)" alt="Tel-Aviv's city center">
             </div>
             <div class="column">
             <img class="demo cursor" src="img/TLV2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Charles Clore Beach, north of Port of Jaffa">
@@ -278,8 +271,19 @@
         </div>
 
                 </div>
-            </div>
+        
+        <div style="display: flex; flex-direction: row; position: relative; margin-bottom: -100px; top: -250px;">
+            <div style="width: 50%;"><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>     
+
+            <div style="width: 50%; text-align: end;"><a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+
+        </div>
+
+    </div>
+        
 </div>
+
+<div style="height: 500px;"></div>
 
 <script>
 
