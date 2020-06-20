@@ -345,40 +345,40 @@
         <div style="display: flex; flex-direction: row;">
 
 
-            <div><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>     
+            <div><a class="prev" onclick="plusSlidesLis(-1)">&#10094;</a></div>     
 
         <!-- Full-width images with number text -->
             <div class="mySlides">
                 <div class="numbertext">1 / 6</div>
-                <img src="img/TLV1.jpg" class="mySlides-pic">
+                <img src="img/LIS1.jpg" class="mySlides-pic">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">2 / 6</div>
-                <img src="img/TLV2.jpg" class="mySlides-pic">
+                <img src="img/LIS2.jpg" class="mySlides-pic">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">3 / 6</div>
-                <img src="img/TLV3.jpg" class="mySlides-pic">
+                <img src="img/LIS3.jpg" class="mySlides-pic">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">4 / 6</div>
-                <img src="img/TLV4.jpg" class="mySlides-pic">
+                <img src="img/LIS4.jpg" class="mySlides-pic">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">5 / 6</div>
-                <img src="img/TLV5.jpg" class="mySlides-pic">
+                <img src="img/LIS5.jpg" class="mySlides-pic">
             </div>
 
             <div class="mySlides">
                 <div class="numbertext">6 / 6</div>
-                <img src="img/TLV6.jpg" class="mySlides-pic">
+                <img src="img/LIS6.jpg" class="mySlides-pic">
             </div>
         
-            <div><a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+            <div><a class="next" onclick="plusSlidesLis(1)">&#10095;</a></div>
          </div>
     <!-- Next and previous buttons -->
 
@@ -408,8 +408,43 @@
         <img class="demo cursor" src="img/TLV6.jpg" style="width:100%; border-bottom-right-radius: 25px;" onclick="currentSlide(6)" alt="Frishman Beach after sunset">
         </div>
     </div>
+<!--
+    <script>
 
+        var slideIndex = 1;
+        showSlidesLis(slideIndex);
+        
+        // Next/previous controls
+        function plusSlidesLis(n) {
+          showSlidesLis(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        
+        </script>
 
+    -->
 </div></div></div>
 
 <!--    Card #3                 -->
@@ -424,7 +459,6 @@
 
     <!--    Card Thumb Image            -->
     <!--    Insert Thumb Image Here     -->
-
 
 
 </main>
