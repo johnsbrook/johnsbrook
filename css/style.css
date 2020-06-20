@@ -25,11 +25,10 @@
 }
 
 .container {
+    width: 100%;
     max-width: 1080px;
     margin: auto;
 }
-
-
 
 
 /*      Fonts               */
@@ -290,11 +289,11 @@ h2 {
 
 .card-box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
     width: 95%;
     max-width: 500px;
-    
+
     margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -324,6 +323,141 @@ img.card-box-thumb-img {
     margin-top: 10px;
 }
 
+
+
+
+/*        Pop Up Gallery          */
+
 .card-box-pop {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border: 2px red solid;
+
 }
+
+
+
+.mySlides {
+    display: none;
+    width: 100%;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev {
+   
+    position: relative;
+
+
+
+    width: auto;
+
+    cursor: pointer;
+
+    color: white;
+    font-weight: 200;
+    font-size: 100px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(0, 0, 0, .5);
+  }
+  .next {
+    
+    position: relative;
+  
+
+    width: auto;
+    cursor: pointer;
+    
+    color: white;
+    font-weight: 200;
+    font-size: 100px;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(0, 0, 0, .5);
+  }
+  
+ 
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .mySlides-pic {
+    display: flex;
+    position: relative; 
+    z-index: -1; 
+    width: 100%; 
+    
+    border-top-left-radius: 25px; 
+    border-top-right-radius: 25px; 
+    margin-bottom: -4px;
+
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color:rgba(255,255,255,1);
+    font-size: 12px;
+ 
+    position: relative;
+    top: 30px;
+   
+    width: 100%;
+    background-color: rgba(0, 0, 0, .25);
+
+    font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .75);
+    padding: 2px 16px;
+    color: white;
+    font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+    font-size: medium;
+    line-height: 1;
+    
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.665%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+  
