@@ -1,3 +1,463 @@
+<<<<<<< HEAD
+/*      CSS Designed Mobile First       */
+
+
+/*      General Styling     */
+
+.no-margin {
+    margin: 0;
+}
+
+.auto-margin {
+    margin: auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+.no-decoration {
+    list-style: none;
+    text-decoration: none;
+}
+
+.no-border {
+    border: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+}
+
+
+/*      Fonts               */
+
+.font-header {
+    color: white;
+    font-family: 'Parisienne', Arial, Helvetica, sans-serif;    
+    letter-spacing: 2px;
+}
+
+.font-nav {
+    font-size: 1.5em;
+}
+
+.font-author {
+    font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+    font-size: .85em;
+}
+
+.font-box {
+    font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+
+/*      Header Styling      */
+
+.background-color-header {
+    background-color: rgba(15,155,225,1);
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: lighter;
+    margin: 0px 5px 5px 5px;
+    padding-top: 10px;
+}
+ 
+h2 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin: 5px 5px;
+    padding: 5px auto;
+    line-height: 1.5;
+}
+
+
+
+
+/*      Navigation Bar      */
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 1080px;
+
+    margin: auto;
+    padding: auto 10px;
+
+    background-color: rgb(77, 181, 236);
+
+    box-shadow: 0px 6px 5px 0px rgba(184,184,184,0.47);
+    }
+
+#nav-menu {
+    display: none; 
+
+}
+
+.nav-menu-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: auto;
+
+
+}
+
+.nav-menu-div {
+    padding: 5px 15px;
+}
+
+.nav-menu-div a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu-div-1 {
+    padding: 5px 15px;
+}
+
+.nav-menu-div:hover {
+    background-color: rgba(135, 206, 250, 1);
+    cursor: pointer;  
+}
+
+    /*      Navigation Bar - Media Query Mobile to Desktop      */
+
+        @media only screen and (min-width: 890px) {
+            .nav-menu-div-1 {
+                display: none;
+            }
+
+            #nav-menu {
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+            }
+            .nav-menu-container {
+                flex-direction: row;
+                background-color: rgba(135, 206, 250, .0);
+            }
+
+        }
+
+
+
+/*      Tweeter Styled Card     */
+
+.tweeter-card {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+    margin-top: 25px;
+
+    padding-top: 10px;
+
+    width: 95%;
+    max-width: 500px;
+
+    border: 1px;
+    border-style: solid;
+    border-color: rgba(15,155,225,1);
+    border-radius: 10px;
+}
+
+
+.tweeter-card-top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.face-thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30%;
+
+    border: 0px;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-style: dotted;
+    border-color: rgba(15,155,225,1);
+}
+
+.tweeter-card-img {
+    
+    width: 90%;
+    max-width: 125px;
+    height: auto;
+    border-radius: 10px;
+ 
+}
+
+.tweeter-card-details {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    
+    width: 58%;
+
+    border: 0px;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-style: dotted;
+    border-color: rgba(15,155,225,1);
+
+    font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: rgb(65, 65, 65);
+}
+
+.tweeter-card-details-div {
+    margin-left: 5px;
+    margin-top: 2.5px;
+    line-height: 1;
+}
+
+.tweeter-card-details-author {
+    margin: 0px 0 10px 5px;
+}
+
+
+.tweeter-card-instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 12%;
+    padding: 10px;
+
+    border: 0px;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-style: dotted;
+    border-color: rgba(15,155,225,1);
+
+    color: rgba(15,155,225,1);
+}
+
+.tweeter-card-instagram a {
+    color: rgba(15,155,225,1);
+    text-decoration: none;
+}
+
+.tweeter-card-instagram-icon{
+    font-size: 2.75em;
+    color: rgba(15,155,225,1);
+    text-align: center;
+
+    padding-right: 5px;
+}
+
+.tweeter-card-instagram-follow {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .75em;
+    text-align: center;
+
+    padding-right: 5px;
+}
+
+.tweeter-card-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+
+    padding: 20px;
+    font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+
+    line-height: 1.5;
+}
+
+
+
+/*      Destination Cards       */
+
+.card-box-container {
+    margin: 10px;
+
+}
+
+.card-box {
+    display: flex;
+    flex-direction: row;
+
+    width: 95%;
+    max-width: 500px;
+
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    border: 1px;
+    border-color: rgb(65, 65, 65);
+    border-style: solid;
+    border-radius: 12.5px;
+
+    box-shadow: 0px 0px 7px 6px rgba(230,230,230,1);
+}
+
+.card-box-title {
+    font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    
+}
+
+
+.card-box-thumb {
+    width: 100%;
+}
+
+img.card-box-thumb-img {
+    width: 100%;
+    border-radius: 5px;
+
+    margin-top: 10px;
+}
+
+
+
+
+/*        Pop Up Gallery          */
+
+.card-box-pop {
+    position: relative;
+
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+
+
+
+.mySlides {
+    display: none;
+    width: 100%;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev {
+    position: relative;
+    width: auto;
+
+    cursor: pointer;
+
+    color: white;
+    font-weight: 200;
+    font-size: 100px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .next {
+    
+    position: relative;
+  
+    width: auto;
+    cursor: pointer;
+    
+    color: white;
+    font-weight: 200;
+    font-size: 100px;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+ 
+  
+  /* On hover, add a black background color with a little bit see-through */
+
+
+  .mySlides-pic {
+    display: flex;
+    position: relative; 
+    z-index: -1;
+    width: 100%; 
+    
+    border-top-left-radius: 25px; 
+    border-top-right-radius: 25px; 
+    margin-bottom: -4px;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color:rgba(255,255,255,1);
+    font-size: 12px;
+ 
+    position: relative;
+    top: 30px;
+   
+    width: 100%;
+    background-color: rgba(0, 0, 0, .25);
+
+    font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;  
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .75);
+    padding: 2px 16px;
+    color: white;
+    font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+    font-size: medium;
+    line-height: 1;
+    
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.665%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+  
+=======
 /*      CSS Designed Mobile First       */
 
 
@@ -464,3 +924,4 @@ img.card-box-thumb-img {
 
 
   
+>>>>>>> 0ce408248f42645a909b9287396ab194c2768f58
